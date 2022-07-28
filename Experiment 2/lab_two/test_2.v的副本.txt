@@ -1,0 +1,1 @@
+`timescale 1ns/1nsmodule test_tb();wire [3:0]A;wire [3:0]B;wire [3:0]C;wire [3:0]D;reg [9:0]a,rst;initial    begin	     	a[0]=1;	#10	a[1]=1;	#10	a[6]=1;	#10	a[3]=1;        #10	a[4]=1;	#10	rst=1;     	#10	a[0]=1;	#10	a[1]=1;	#10	a[6]=1;	#10	a[3]=1;        #10	a[4]=1;	endtest u1(.A(A),.B(B),.C(C),.D(D),.rst(rst));endmodule

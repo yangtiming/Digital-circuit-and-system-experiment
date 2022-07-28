@@ -1,0 +1,1 @@
+module test(A,B,C,D,y,y1,y2,y3,y4,y5,y6,y7);input A,B,C,D;output y,y1,y2,y3,y4,y5,y6,y7;assign y1 = A & B & (~C) & (~D);assign y2 = (~A) & B & (~C) &  D;assign y3 = A & (~B) & (~C) & D;assign y4 = (~A) & (~B) & C & D;assign y5 = A & B & C & D;assign y6 = (~A) & B & C & (~D);assign y7 = A & (~B) & C & (~D);assign y = y1 | y2 | y3 | y4 | y5 | y6| y7  ;endmodule 
